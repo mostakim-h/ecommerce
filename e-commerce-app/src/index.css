@@ -160,3 +160,126 @@ body{
   background: rgb(9, 0, 62);
   color: white;
 }
+
+.special-product-card{
+  max-width: 1200px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-product-card .left{
+  width: 50%;
+  background-image: url(https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/bg3-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin: 10px;
+  border-radius: 20px;
+  font-family: roboto;
+  color: white;
+  padding: 50px;
+}
+
+.special-product-card .right{
+  width: 50%;
+  background-image: url(https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/bg3-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  margin: 10px;
+  border-radius: 20px;
+  font-family: roboto;
+  color: white;
+  padding: 50px;
+}
+
+.special-product-card .left p{
+  margin: 35px 0;
+  line-height: 30px;
+  max-width: 250px;
+}
+
+.special-product-card button{
+  margin-top: 70px;
+  border: none;
+  outline: none;
+  background: rgb(0, 119, 255);
+  padding: 20px 40px;
+  border-radius: 30px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.special-product-card button:hover{
+  color: rgb(0, 119, 255);
+  background: rgb(255, 255, 255);
+}
+
+.special-product-card .right p{
+  margin: 35px 0;
+  line-height: 30px;
+  max-width: 250px;
+}
+
+.products-card{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: roboto;
+}
+
+.products-card .card-items {
+  width: 22%;
+  margin: 15px;
+  border-radius: 30px;
+  border: 1px solid #dfdfdf;
+}
+
+.products-card .card-items .bg-img{
+  background-image: url(https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2021/10/gold-watch-1-600x600.png);
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+
+.products-card .card-items .bg-img p{
+  border-radius: 50%;
+  background: rgb(0, 119, 255);
+  width: 50px;
+  text-align: center;
+  padding: 15px 0;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.products-card .card-items .bg-img button{
+  margin-top: 70px;
+  border: none;
+  outline: none;
+  background: rgb(0, 119, 255);
+  padding: 15px 35px;
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.products-card .card-items .bg-img div{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.products-card .card-items .bg-img button:hover{
+  color: rgb(255, 255, 255);
+  background: rgb(11, 0, 75);
+}
