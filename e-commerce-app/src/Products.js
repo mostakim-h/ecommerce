@@ -14,12 +14,13 @@ const Products = () => {
                             </div>
                         </div>
                         <div className="card-desc">
-                            <p>Chrome Watch</p>
-                            <p>*****</p>
-                            <p>$399.00</p>
+                            <p className="title">Chrome Watch</p>
+                            <p className="star">*****</p>
+                            <p className="prize">$399.00</p>
                         </div>
                     </div>
                 ))}
+                <button className="see-all-product-btn">See all Products</button>
             </div>
         </div>
     );

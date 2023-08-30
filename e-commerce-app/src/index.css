@@ -248,6 +248,7 @@ body{
   height: 250px;
   background-position: center;
   background-size: cover;
+  cursor: pointer;
 }
 
 .products-card .card-items .bg-img p{
@@ -270,7 +271,8 @@ body{
   color: rgb(255, 255, 255);
   font-weight: bold;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
+  visibility: hidden;
 }
 
 .products-card .card-items .bg-img div{
@@ -283,3 +285,315 @@ body{
   color: rgb(255, 255, 255);
   background: rgb(11, 0, 75);
 }
+
+.products-card .card-items .bg-img:hover button{
+  visibility: visible;
+}
+
+.products-card .card-items .card-desc{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.products-card .card-items .card-desc .title{
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.products-card .card-items .card-desc .star{
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 166, 0);
+}
+
+.products-card .card-items .card-desc .prize{
+  font-size: 20px;
+  color: #545454;
+}
+
+.products-card .see-all-product-btn{
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border: none;
+  outline: none;
+  background: rgb(0, 119, 255);
+  padding: 25px 40px;
+  border-radius: 40px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.products-card .see-all-product-btn:hover{
+  color: rgb(0, 119, 255);
+  background: rgb(8, 0, 70);
+}
+
+.discount-offer-banner .banner .text-left h1{
+  color: #100046;
+}
+
+.discount-offer-banner .banner .text-left .deal-text{
+  color: #ffffff;
+  padding: 10px;
+  max-width: 180px;
+  font-weight: bold;
+  text-align: center;
+  background: #100046;
+}
+
+.discount-offer-banner .banner .text-left p{
+  color: #100046;
+}
+
+.news{
+  max-width: 1200px;
+  margin: 100px auto;
+  font-family: roboto;
+}
+
+.news .title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news .title h1{
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.news .title p{
+  color: #545454;
+}
+.news .title h1 span{
+  color: rgb(0, 119, 255);
+}
+
+.news .title .all-news-btn{
+  margin-top: 70px;
+  border: none;
+  outline: none;
+  background: rgb(0, 119, 255);
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.news .title .all-news-btn:hover{
+  color: rgb(0, 119, 255);
+  background: #100046;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
