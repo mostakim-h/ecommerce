@@ -1,4 +1,5 @@
 import DiscountOfferBanner from "./DiscountOfferBanner";
+import Footer from "./Footer";
 import HeaderBanner from "./HeaderBanner";
 import News from "./News";
 import ProductCetagoryCard from "./ProductCetagoryCard";
@@ -14,6 +15,7 @@ const Home = () => {
             <Products/>
             <DiscountOfferBanner/>
             <News/>
+            <Footer/>
         </div>
     );
 }
