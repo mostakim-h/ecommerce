@@ -1,10 +1,11 @@
 *{
   padding: 0;
   margin: 0;
-  background: #f5f5f5;
 }
 
-
+body{
+  background: #ffffff;
+}
 
 .nav-container{
   max-width: 1200px;
@@ -34,4 +35,128 @@
 
 .nav-container .menu a:hover {
   color: rgb(0, 98, 255);
+}
+
+/* banner end */
+
+/* HeaderBanner */
+
+.header-banner{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header-banner .banner{
+  background: #100046;
+  width: 100%;
+  color: white;
+  font-family: roboto;
+  font-weight: 300;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-banner .banner .text-left{
+  margin-left: 100px;
+}
+
+.header-banner .banner .text-left h1{
+  font-size: 3.7rem;
+  margin-bottom: 70px;
+  line-height: 80px;
+}
+
+.header-banner .banner .text-left p{
+  line-height: 30px;
+  color: rgb(216, 216, 216);
+}
+
+.header-banner .banner .text-left h1 span{
+  color: rgb(0, 119, 255);
+}
+
+.header-banner .banner .img-right img{
+  padding: 100px 0;
+}
+
+.header-banner .banner .text-left .button .btn1{
+  margin-top: 70px;
+  border: none;
+  outline: none;
+  background: rgb(0, 119, 255);
+  padding: 20px 40px;
+  border-radius: 30px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.header-banner .banner .text-left .button .btn1:hover{
+  background: rgb(252, 252, 252);
+  color: rgb(0, 119, 255);
+}
+
+.header-banner .banner .text-left .button .btn2{
+  margin-top: 70px;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 20px 40px;
+  border-radius: 30px;
+  font-size: 20px;
+  color: rgb(0, 119, 255);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.product-cetagory-card{
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.product-cetagory-card .card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.product-cetagory-card .card-container .card-list{
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  margin: 0 10px;
+}
+
+.product-cetagory-card .card-container .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-cetagory-card .card-container .text-box{
+  background: rgb(255, 255, 255);
+  padding: 20px 0;
+  width: 200px;
+  border-radius: 30px;
+  font-family: roboto;
+  box-shadow: 2px 6px 10px #e1e1e1;
+  margin-top: -20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.product-cetagory-card .card-container .text-box:hover{
+  background: rgb(9, 0, 62);
+  color: white;
 }

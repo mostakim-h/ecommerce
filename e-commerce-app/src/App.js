@@ -1,5 +1,6 @@
 import Navber from "./Navber";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom/cjs/react-router-dom";
+import Home from './Home';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Navber/>
         <Switch>
           <Route path="/">
-            
+            <Home/>
           </Route>
         </Switch>
       </Router>
