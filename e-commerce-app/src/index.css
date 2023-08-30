@@ -1,0 +1,37 @@
+*{
+  padding: 0;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+
+
+.nav-container{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.nav-container .menu a {
+  margin-right: 30px;
+  font-family: roboto;
+  font-weight: 300;
+  text-decoration: none;
+  color: rgb(113, 113, 113);
+}
+
+.nav-container .menu input {
+  border: none;
+  color: rgb(113, 113, 113);
+  background: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  outline-color: rgb(0, 98, 255);
+}
+
+.nav-container .menu a:hover {
+  color: rgb(0, 98, 255);
+}
