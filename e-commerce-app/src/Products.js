@@ -1,24 +1,35 @@
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import useFetch from './useFetch';
+
 const Products = () => {
 
-    const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    const { data } = useFetch('http://localhost:9000/product')
 
     return (
         <div className="products">
             <div className="products-card">
-                {arr.map((a, i) => (
-                    <div className="card-items" key={i}>
-                        <div className="bg-img">
-                            <p>Sale!</p>
-                            <div>
-                            <button>Add to Cart</button>
+                {data && data.map((value) => (
+
+                    <div className="card-items" key={value.id}>
+                        <Link to={`/productdetails/${value.id}`}>
+                            <div style={{
+                                backgroundImage: `url(${value.imageUrl})`
+                            }} className="bg-img">
+
+                                {!value.inStock && <p>Sale!</p>}
+
+                                <button>Add to Cart</button>
+
                             </div>
-                        </div>
+                        
                         <div className="card-desc">
-                            <p className="title">Chrome Watch</p>
-                            <p className="star">*****</p>
-                            <p className="prize">$399.00</p>
+                            <p className="title">{value.productName}</p>
+                            <p className="star">{value.ratings}</p>
+                            <p className="prize">$ {value.prize}.00</p>
                         </div>
+                        </Link>
                     </div>
+
                 ))}
                 <button className="see-all-product-btn">See all Products</button>
             </div>
