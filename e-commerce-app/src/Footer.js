@@ -16,7 +16,8 @@ const Footer = () => {
                 <div className="footer-items">
                     <img width={250} src="https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/05/logo-footer.png" alt="" />
                     <p>Our Address:</p>
-                    <p>Ward 66 Mahmudnagar, Demre <p>Dhaka, Bangladesh</p></p>
+                    <p>Ward 66 Mahmudnagar, Demre </p>
+                    <p>Dhaka, Bangladesh</p>
                     <p>Free Call:</p>
                     <p>+8801317839105</p>
                 </div>

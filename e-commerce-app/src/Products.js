@@ -8,7 +8,7 @@ const Products = () => {
     return (
         <div className="products">
             <div className="products-card">
-                {data && data.map((value) => (
+                {data &&  data.map((value) => (
 
                     <div className="card-items" key={value.id}>
                         <Link to={`/productdetails/${value.id}`}>
@@ -21,15 +21,14 @@ const Products = () => {
                                 <button>Add to Cart</button>
 
                             </div>
-                        
-                        <div className="card-desc">
-                            <p className="title">{value.productName}</p>
-                            <p className="star">{value.ratings}</p>
-                            <p className="prize">$ {value.prize}.00</p>
-                        </div>
+
+                            <div className="card-desc">
+                                <p className="title">{value.productName}</p>
+                                <p className="star">{value.ratings}</p>
+                                <p className="prize">$ {value.prize}.00</p>
+                            </div>
                         </Link>
                     </div>
-
                 ))}
                 <button className="see-all-product-btn">See all Products</button>
             </div>

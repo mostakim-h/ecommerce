@@ -13,7 +13,7 @@ const Home = () => {
             <HeaderBanner/>
             <ProductCetagoryCard/>
             <SpecialProductCard/>
-            <Products/>
+            <Products data={"a"}/>
             <DiscountOfferBanner/>
             <News/>
         </div>

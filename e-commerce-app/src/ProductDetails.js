@@ -1,12 +1,15 @@
 import { useParams } from "react-router-dom/cjs/react-router-dom";
 import useFetch from "./useFetch";
 import { useState } from "react";
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const ProductDetails = () => {
-
+    const [count, setCount] = useState(1)
     const { id } = useParams();
     const { data } = useFetch('http://localhost:9000/product/' + id)
-    const [count, setCount] = useState(1)
+    const { data: datas } = useFetch('http://localhost:9000/product')
+
+    console.log(datas)
 
     const handleqty = (operatore) => {
         if (operatore === '-' && count > 1) {
@@ -16,11 +19,15 @@ const ProductDetails = () => {
         }
     }
 
+    const handlewinow = ()=>{
+        window.scrollTo(0, 0)
+    }
+
     return (
         <div className="product-details">
 
             {data &&
-                <div className="main-details">
+                <div id="focus" className="main-details">
                     <div className="product-img">
                         <img src={data.imageUrl} alt="" />
                     </div>
@@ -42,10 +49,43 @@ const ProductDetails = () => {
                             <button>Add to Cart</button>
                             <p>Categories: <span>{data.category}</span></p>
                         </div>
-                        
+
                     </div>
                 </div>}
 
+            <div className="similer-products">
+                <h3>Related Products</h3>
+                <hr />
+                <div className="products">
+                    <div className="products-card">
+                        {datas && data && datas.filter((value) => (
+                            data.category.toLowerCase() === ""
+                                ?
+                                value
+                                :
+                                value.category.toLowerCase().includes(data.category) && value.productName !== data.productName
+                        )).map((value) => (
+                            <div className="card-items" key={value.id}>
+                                <Link onClick={()=> handlewinow()} to={`/productdetails/${value.id}`}>
+                                    <div style={{
+                                        backgroundImage: `url(${value.imageUrl})`
+                                    }} className="bg-img">
+
+                                        {!value.inStock && <p>Sale!</p>}
+                                        <button>Add to Cart</button>
+                                    </div>
+
+                                    <div className="card-desc">
+                                        <p className="title">{value.productName}</p>
+                                        <p className="star">{value.ratings}</p>
+                                        <p className="prize">$ {value.prize}.00</p>
+                                    </div>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

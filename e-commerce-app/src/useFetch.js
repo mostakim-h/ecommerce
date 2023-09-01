@@ -16,5 +16,5 @@ const useFetch = (link) => {
 
     return {data}
 }
- 
+
 export default useFetch;
