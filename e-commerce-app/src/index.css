@@ -772,10 +772,12 @@ body{
 .product-category .buttons-of-category button{
   width: 115px;
   padding: 10px;
-  border: none;
+  border: 1px solid #e0e0e0;
+  background: none;
   margin: 5px 0;
   border-radius: 30px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .product-category .buttons-of-category button:first-child{
