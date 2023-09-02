@@ -13,7 +13,7 @@
             "productName": "PlayStation 5",
             "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr3-1-600x600.jpg",
             "prize": 899.00,
-            "category": "gaming",
+            "category": "headphone",
             "inStock" : false,
             "ratings" : "*****",
             "id": 2
@@ -31,7 +31,7 @@
             "productName": "PlayStation Headset",
             "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr1-2-1-600x600.jpg",
             "prize": 599.00,
-            "category": "gaming",
+            "category": "headphone",
             "inStock" : true,
             "ratings" : "*****",
             "id": 4
@@ -49,7 +49,7 @@
             "productName": "PlayStation 5 Pro Max",
             "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr1-2-1-600x600.jpg",
             "prize": 790.00,
-            "category": "gaming",
+            "category": "headphone",
             "inStock" : true,
             "ratings" : "*",
             "id": 6

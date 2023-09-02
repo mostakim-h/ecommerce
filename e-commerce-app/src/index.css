@@ -608,6 +608,23 @@ body{
   margin-right: 30px;
 }
 
+.product-img{
+  position: relative;
+}
+
+.product-img p{
+  color: #ffffff;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  border-radius: 50%;
+  background: rgb(0, 119, 255);
+  width: 50px;
+  text-align: center;
+  padding: 15px 0;
+  margin: 10px;
+}
+
 .product-details .main-details h1{
   color: rgb(0, 119, 255);
   font-size: 40px;
@@ -625,8 +642,8 @@ body{
   margin-bottom: 20px;
 }
 
-.product-details .main-details p{
-  color: rgb(84, 84, 84);
+.details-contents p{
+  color: rgb(144, 144, 144);
   font-size: 16px;
   text-align: justify;
   font-weight: 300;
@@ -740,3 +757,56 @@ body{
   outline: none;
 }
 
+.product-category{
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  font-family: roboto;
+}
+
+.product-category .buttons-of-category{
+  display: flex;
+  flex-direction: column;
+}
+
+.product-category .buttons-of-category button{
+  width: 115px;
+  padding: 10px;
+  border: none;
+  margin: 5px 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.product-category .buttons-of-category button:first-child{
+  margin-top: 30px;
+}
+.product-category .buttons-of-category .buttonActive{
+  background: #100046;
+  color: wheat;
+}
+
+.product-category .buttons-of-category button:hover{
+  background: #100046;
+  color: wheat;
+}
+
+.product-category .products-card{
+  margin: auto;
+  width: 1100px;
+  justify-content: start;
+}
+
+.product-category .buttons-of-category p{
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.product-category .buttons-of-category p span{
+  cursor: pointer;
+  background: #100046;
+  padding: 5px 8px;
+  border-radius: 30px;
+  color: wheat;
+}

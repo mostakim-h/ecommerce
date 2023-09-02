@@ -18,9 +18,8 @@ const Navber = () => {
                 <div className="menu">
                     <Link className={active === 1 ? "active" : ""} onClick={() => handleClass(1)} to="/">Home</Link>
                     <Link className={active === 2 ? "active" : ""} onClick={() => handleClass(2)} to="/shop">Shop</Link>
-                    <Link className={active === 3 ? "active" : ""} onClick={() => handleClass(3)} to="">Categories</Link>
-                    <Link className={active === 4 ? "active" : ""} onClick={() => handleClass(4)} to="">Quick Find</Link>
-                    <Link className={active === 5 ? "active" : ""} onClick={() => handleClass(5)} to="">Pages</Link>
+                    <Link className={active === 3 ? "active" : ""} onClick={() => handleClass(3)} to="/categories">Categories</Link>
+                    <Link className={active === 5 ? "active" : ""} onClick={() => handleClass(5)} to="">Add Product</Link>
                     <input placeholder="Search..." type="text" />
                 </div>
             </div>

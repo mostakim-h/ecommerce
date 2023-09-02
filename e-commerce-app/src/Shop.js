@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import useFetch from './useFetch';
 import { useEffect, useState } from 'react';
+import ProductTamplete from './ProductTamplete';
 
 const Shop = () => {
 
@@ -9,7 +9,7 @@ const Shop = () => {
     const [sorting, setSorting] = useState()
     const [datas, setDatas] = useState(data)
 
-    useEffect(()=>{
+    useEffect(() => {
         setDatas(data)
     }, [data])
 
@@ -21,11 +21,11 @@ const Shop = () => {
             setDatas(data.sort((a, b) => {
                 return a.prize - b.prize
             }))
-        }else if(sorting === 'hightolow'){
+        } else if (sorting === 'hightolow') {
             setDatas(data.sort((a, b) => {
                 return b.prize - a.prize
             }))
-        }else if(sorting === 'defaultsorting'){
+        } else if (sorting === 'defaultsorting') {
             setDatas(data)
         }
     }
@@ -42,26 +42,7 @@ const Shop = () => {
             <div className="products">
                 <div className="products-card">
                     {datas && datas.map((value) => (
-
-                        <div className="card-items" key={value.id}>
-                            <Link to={`/productdetails/${value.id}`}>
-                                <div style={{
-                                    backgroundImage: `url(${value.imageUrl})`
-                                }} className="bg-img">
-
-                                    {!value.inStock && <p>Sale!</p>}
-
-                                    <button>Add to Cart</button>
-
-                                </div>
-
-                                <div className="card-desc">
-                                    <p className="title">{value.productName}</p>
-                                    <p className="star">{value.ratings}</p>
-                                    <p className="prize">$ {value.prize}.00</p>
-                                </div>
-                            </Link>
-                        </div>
+                        <ProductTamplete id={value.id} imageUrl={value.imageUrl} inStock={value.inStock} productName={value.productName} ratings={value.ratings} prize={value.prize} />
                     ))}
                 </div>
             </div>

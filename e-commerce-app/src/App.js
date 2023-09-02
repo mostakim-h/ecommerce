@@ -4,6 +4,7 @@ import Home from './Home';
 import ProductDetails from "./ProductDetails";
 import Footer from "./Footer";
 import Shop from "./Shop";
+import ProductCategory from "./ProductCategory";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path="/shop">
             <Shop/>
+          </Route>
+          <Route path="/categories">
+            <ProductCategory/>
           </Route>
         </Switch>
         <Footer/>

@@ -1,15 +1,13 @@
 import { useParams } from "react-router-dom/cjs/react-router-dom";
 import useFetch from "./useFetch";
 import { useState } from "react";
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import ProductTamplete from './ProductTamplete';
 
 const ProductDetails = () => {
     const [count, setCount] = useState(1)
     const { id } = useParams();
     const { data } = useFetch('http://localhost:9000/product/' + id)
     const { data: datas } = useFetch('http://localhost:9000/product')
-
-    console.log(datas)
 
     const handleqty = (operatore) => {
         if (operatore === '-' && count > 1) {
@@ -19,10 +17,6 @@ const ProductDetails = () => {
         }
     }
 
-    const handlewinow = ()=>{
-        window.scrollTo(0, 0)
-    }
-
     return (
         <div className="product-details">
 
@@ -30,6 +24,7 @@ const ProductDetails = () => {
                 <div id="focus" className="main-details">
                     <div className="product-img">
                         <img src={data.imageUrl} alt="" />
+                        {!data.inStock && <p>Sale!</p>}
                     </div>
                     <div className="details-contents">
                         <div>
@@ -63,28 +58,13 @@ const ProductDetails = () => {
                                 ?
                                 value
                                 :
-                                value.category.toLowerCase().includes(data.category) && value.productName !== data.productName
+                                value.category === data.category && value.productName !== data.productName
                         )).map((value) => (
-                            <div className="card-items" key={value.id}>
-                                <Link onClick={()=> handlewinow()} to={`/productdetails/${value.id}`}>
-                                    <div style={{
-                                        backgroundImage: `url(${value.imageUrl})`
-                                    }} className="bg-img">
-
-                                        {!value.inStock && <p>Sale!</p>}
-                                        <button>Add to Cart</button>
-                                    </div>
-
-                                    <div className="card-desc">
-                                        <p className="title">{value.productName}</p>
-                                        <p className="star">{value.ratings}</p>
-                                        <p className="prize">$ {value.prize}.00</p>
-                                    </div>
-                                </Link>
-                            </div>
+                            <ProductTamplete id={value.id} imageUrl={value.imageUrl} inStock={value.inStock} productName={value.productName} ratings={value.ratings} prize={value.prize} />
                         ))}
                     </div>
                 </div>
+                {window.scrollTo(0, 0)}
             </div>
         </div>
     );

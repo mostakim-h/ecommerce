@@ -1,37 +1,18 @@
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import useFetch from './useFetch';
+import ProductTamplete from './ProductTamplete';
 
 const Products = () => {
 
     const { data } = useFetch('http://localhost:9000/product')
 
     return (
-        <div className="products">
+        <div className='products'>
             <div className="products-card">
-                {data &&  data.map((value) => (
-
-                    <div className="card-items" key={value.id}>
-                        <Link to={`/productdetails/${value.id}`}>
-                            <div style={{
-                                backgroundImage: `url(${value.imageUrl})`
-                            }} className="bg-img">
-
-                                {!value.inStock && <p>Sale!</p>}
-
-                                <button>Add to Cart</button>
-
-                            </div>
-
-                            <div className="card-desc">
-                                <p className="title">{value.productName}</p>
-                                <p className="star">{value.ratings}</p>
-                                <p className="prize">$ {value.prize}.00</p>
-                            </div>
-                        </Link>
-                    </div>
-                ))}
-                <button className="see-all-product-btn">See all Products</button>
-            </div>
+            {data && data.map((value) =>(
+            <ProductTamplete id={value.id} imageUrl={value.imageUrl} inStock={value.inStock} productName={value.productName} ratings = {value.ratings} prize={value.prize} />
+            ))}
+            <button className="see-all-product-btn">See all Products</button>
+        </div>
         </div>
     );
 }
