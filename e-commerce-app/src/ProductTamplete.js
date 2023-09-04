@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const ProductTamplete = ({ id, imageUrl, inStock, productName, ratings, prize }) => {
     return (
-        <div className="card-items" key={id}>
+        <div className="card-items">
             <Link to={`/productdetails/${id}`}>
                 <div style={{
                     backgroundImage: `url(${imageUrl})`
