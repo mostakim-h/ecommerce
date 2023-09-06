@@ -1,16 +1,10 @@
 {
   "cart": [
     {
-      "id": 3,
-      "productName": "Tablet X5",
-      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr2-1-600x600.jpg",
-      "prize": 699
-    },
-    {
-      "id": 10,
-      "productName": "Android Phone",
-      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr9-1-600x600.jpg",
-      "prize": 599
+      "id": 16,
+      "productName": "Iphone 30 Pro Max",
+      "imageUrl": "https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/2/_/2_241_2.jpg",
+      "prize": "2550"
     }
   ]
 }

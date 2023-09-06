@@ -269,14 +269,21 @@ body{
   max-width: 250px;
 }
 
+.see-all-btn-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .products-card{
   max-width: 1200px;
-  margin: auto;
+  margin: 50px auto 50px auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  font-family: roboto;
+  font-family: roboto;  
 }
 
 .products-card .card-items {
@@ -368,10 +375,11 @@ body{
 .products-card .card-items .card-desc .prize{
   font-size: 20px;
   color: #545454;
+  display: flex;
 }
 
-.products-card .see-all-product-btn{
-  margin-top: 70px;
+.see-all-product-btn{
+  margin-top: 100px auto;
   margin-bottom: 70px;
   border: none;
   outline: none;
@@ -383,9 +391,11 @@ body{
   font-weight: bold;
   cursor: pointer;
   transition: 0.5s;
+  text-decoration: none;
+  font-family: roboto;
 }
 
-.products-card .see-all-product-btn:hover{
+.see-all-product-btn:hover{
   color: rgb(0, 119, 255);
   background: rgb(8, 0, 70);
 }
@@ -889,4 +899,45 @@ body{
 .cart .cart-section .cancelbtn:hover{
   background: red;
   color: #ffffff;
+}
+
+.add_product{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: roboto;
+}
+
+.add_product h1{
+  margin-bottom: 30px;
+}
+
+.add_product input{
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #dfdfdf;
+  margin: 10px;
+  border-radius: 30px;
+  width: 400px;
+}
+
+
+.add_product button{
+  margin: 20px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  background: rgb(0, 119, 255);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add_product button:hover{
+  background: #100046;
+  color: rgb(0, 119, 255);
 }

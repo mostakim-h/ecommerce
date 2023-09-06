@@ -1,112 +1,148 @@
 {
-    "product": [
-        {
-            "productName": "Chrome Watch",
-            "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2021/10/gold-watch-1-600x600.png",
-            "prize": 399.00,
-            "category": "watch",
-            "inStock" : true,
-            "ratings" : "*****",
-            "id": 1
-        },
-        {
-            "productName": "PlayStation 5",
-            "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr3-1-600x600.jpg",
-            "prize": 899.00,
-            "category": "headphone",
-            "inStock" : false,
-            "ratings" : "*****",
-            "id": 2
-        },
-        {
-            "productName": "Tablet X5",
-            "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr2-1-600x600.jpg",
-            "prize": 699.00,
-            "category": "tablet",
-            "inStock" : true,
-            "ratings" : "***",
-            "id": 3
-        },
-        {
-            "productName": "PlayStation Headset",
-            "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr1-2-1-600x600.jpg",
-            "prize": 599.00,
-            "category": "headphone",
-            "inStock" : true,
-            "ratings" : "*****",
-            "id": 4
-        },
-        {
-            "productName": "iPhone 14 Pro",
-            "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr4-1-600x600.jpg",
-            "prize": 1599.00,
-            "category": "phone",
-            "inStock" : false,
-            "ratings" : "***",
-            "id": 5
-        },
-        {
-            "productName": "PlayStation 5 Pro Max",
-            "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr1-2-1-600x600.jpg",
-            "prize": 790.00,
-            "category": "headphone",
-            "inStock" : true,
-            "ratings" : "*",
-            "id": 6
-        },
-        {
-            "productName": "Wireless Controller 5",
-            "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr6-1-600x600.jpg",
-            "prize": 399.00,
-            "category": "gaming",
-            "inStock" : false,
-            "ratings" : "****",
-            "id": 7
-        },
-        {
-            "productName": "Xbox One",
-            "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr7-1-600x600.jpg",
-            "prize": 399.00,
-            "category": "gaming",
-            "inStock" : true,
-            "ratings" : "**",
-            "id": 8
-        },
-        {
-            "productName": "Black Sports Watch",
-            "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr8-1-600x600.jpg",
-            "prize": 399.00,
-            "category": "watch",
-            "inStock" : false,
-            "ratings" : "*****",
-            "id": 9
-        },
-        {
-            "productName": "Android Phone",
-            "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr9-1-600x600.jpg",
-            "prize": 599.00,
-            "category": "phone",
-            "inStock" : true,
-            "ratings" : "*****",
-            "id": 10
-        },
-        {
-            "productName": "Silver Laptop",
-            "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr10-1-600x600.jpg",
-            "prize": 2799.00,
-            "category": "laptop",
-            "inStock" : true,
-            "ratings" : "****",
-            "id": 11
-        },
-        {
-            "productName": "Super Sony Laptop",
-            "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr11-1-600x600.jpg",
-            "prize": 2399.00,
-            "category": "laptop",
-            "inStock" : false,
-            "ratings" : "*****",
-            "id": 12
-        }
-    ]
+  "product": [
+    {
+      "productName": "Chrome Watch",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2021/10/gold-watch-1-600x600.png",
+      "prize": 399,
+      "category": "watch",
+      "inStock": true,
+      "ratings": "*****",
+      "id": 1
+    },
+    {
+      "productName": "PlayStation 5",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr3-1-600x600.jpg",
+      "prize": 899,
+      "category": "headphone",
+      "inStock": false,
+      "ratings": "*****",
+      "id": 2
+    },
+    {
+      "productName": "Tablet X5",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr2-1-600x600.jpg",
+      "prize": 699,
+      "category": "tablet",
+      "inStock": true,
+      "ratings": "***",
+      "id": 3
+    },
+    {
+      "productName": "PlayStation Headset",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr1-2-1-600x600.jpg",
+      "prize": 599,
+      "category": "headphone",
+      "inStock": true,
+      "ratings": "*****",
+      "id": 4
+    },
+    {
+      "productName": "iPhone 14 Pro",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr4-1-600x600.jpg",
+      "prize": 1599,
+      "category": "phone",
+      "inStock": false,
+      "ratings": "***",
+      "id": 5
+    },
+    {
+      "productName": "PlayStation 5 Pro Max",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr1-2-1-600x600.jpg",
+      "prize": 790,
+      "category": "headphone",
+      "inStock": true,
+      "ratings": "*",
+      "id": 6
+    },
+    {
+      "productName": "Wireless Controller 5",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr6-1-600x600.jpg",
+      "prize": 399,
+      "category": "gaming",
+      "inStock": false,
+      "ratings": "****",
+      "id": 7
+    },
+    {
+      "productName": "Xbox One",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr7-1-600x600.jpg",
+      "prize": 399,
+      "category": "gaming",
+      "inStock": true,
+      "ratings": "**",
+      "id": 8
+    },
+    {
+      "productName": "Black Sports Watch",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr8-1-600x600.jpg",
+      "prize": 399,
+      "category": "watch",
+      "inStock": false,
+      "ratings": "*****",
+      "id": 9
+    },
+    {
+      "productName": "Android Phone",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr9-1-600x600.jpg",
+      "prize": 599,
+      "category": "phone",
+      "inStock": true,
+      "ratings": "*****",
+      "id": 10
+    },
+    {
+      "productName": "Silver Laptop",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr10-1-600x600.jpg",
+      "prize": 2799,
+      "category": "laptop",
+      "inStock": true,
+      "ratings": "****",
+      "id": 11
+    },
+    {
+      "productName": "Super Sony Laptop",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr11-1-600x600.jpg",
+      "prize": 2399,
+      "category": "laptop",
+      "inStock": false,
+      "ratings": "*****",
+      "id": 12
+    },
+    {
+      "productName": "Iphone 15 Pro Max",
+      "imageUrl": "https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/i/p/iphone-14-storage-select-202209-6-1inch-y889.jpg",
+      "prize": "525",
+      "ratings": "****",
+      "inStock": true,
+      "category": "phone",
+      "id": 13
+    },
+    {
+      "productName": "Iphone 16 Pro Max",
+      "imageUrl": "https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/1/_/1_66_6_2_1_12.jpg",
+      "prize": "1999",
+      "ratings": "*****",
+      "inStock": false,
+      "category": "phone",
+      "id": 14
+    },
+    {
+      "productName": "Iphone 17 Pro Max",
+      "imageUrl": "https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/v/_/v_ng_20.png",
+      "prize": "2550",
+      "ratings": "****",
+      "inStock": true,
+      "category": "phone",
+      "id": 15
+    },
+    {
+      "productName": "Iphone 30 Pro Max",
+      "imageUrl": "https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/2/_/2_241_2.jpg",
+      "prize": "2550",
+      "ratings": "**",
+      "inStock": "true",
+      "category": "phone",
+      "id": 16
+    }
+  ]
 }
