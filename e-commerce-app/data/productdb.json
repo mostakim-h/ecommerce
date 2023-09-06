@@ -140,7 +140,7 @@
       "imageUrl": "https://cdn2.cellphones.com.vn/358x358,webp,q100/media/catalog/product/2/_/2_241_2.jpg",
       "prize": "2550",
       "ratings": "**",
-      "inStock": "true",
+      "inStock": true,
       "category": "phone",
       "id": 16
     }
