@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom/cjs/react-router-dom";
 import useFetch from "./useFetch";
 import { useState } from "react";
 import ProductTamplete from './ProductTamplete';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 const ProductDetails = () => {
     const [count, setCount] = useState(1)
@@ -35,13 +36,16 @@ const ProductDetails = () => {
 
                             <div className="qtybtn">
                                 <button onClick={() => handleqty('-')}>-</button>
-                                <input type="text" value={count} onChange={(e) => setCount(e.target.value)} maxLength={2} />
+                                <input disabled type="text" value={count} onChange={(e) => setCount(e.target.value)} maxLength={2} />
                                 <button onClick={() => handleqty('+')}>+</button>
                             </div>
                         </div>
 
                         <div>
-                            <button>Add to Cart</button>
+                            <button><Link to="/cart" style={{
+                                color: "#fff",
+                                textDecoration: 'none'
+                            }}>Add to Cart</Link></button>
                             <p>Categories: <span>{data.category}</span></p>
                         </div>
 
@@ -60,7 +64,7 @@ const ProductDetails = () => {
                                 :
                                 value.category === data.category && value.productName !== data.productName
                         )).map((value) => (
-                            <ProductTamplete id={value.id} imageUrl={value.imageUrl} inStock={value.inStock} productName={value.productName} ratings={value.ratings} prize={value.prize} />
+                            <ProductTamplete key={value.id} id={value.id} imageUrl={value.imageUrl} inStock={value.inStock} productName={value.productName} ratings={value.ratings} prize={value.prize} />
                         ))}
                     </div>
                 </div>

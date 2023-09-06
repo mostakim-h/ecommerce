@@ -5,6 +5,7 @@ import ProductDetails from "./ProductDetails";
 import Footer from "./Footer";
 import Shop from "./Shop";
 import ProductCategory from "./ProductCategory";
+import Cart from "./Cart";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/categories">
             <ProductCategory/>
+          </Route>
+          <Route path="/cart">
+            <Cart/>
           </Route>
         </Switch>
         <Footer/>

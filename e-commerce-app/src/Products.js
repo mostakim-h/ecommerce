@@ -9,7 +9,7 @@ const Products = () => {
         <div className='products'>
             <div className="products-card">
             {data && data.map((value) =>(
-            <ProductTamplete id={value.id} imageUrl={value.imageUrl} inStock={value.inStock} productName={value.productName} ratings = {value.ratings} prize={value.prize} />
+            <ProductTamplete key={value.id} id={value.id} imageUrl={value.imageUrl} inStock={value.inStock} productName={value.productName} ratings = {value.ratings} prize={value.prize} />
             ))}
             <button className="see-all-product-btn">See all Products</button>
         </div>

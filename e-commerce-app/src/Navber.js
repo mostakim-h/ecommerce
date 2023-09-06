@@ -20,6 +20,7 @@ const Navber = () => {
                     <Link className={active === 2 ? "active" : ""} onClick={() => handleClass(2)} to="/shop">Shop</Link>
                     <Link className={active === 3 ? "active" : ""} onClick={() => handleClass(3)} to="/categories">Categories</Link>
                     <Link className={active === 5 ? "active" : ""} onClick={() => handleClass(5)} to="">Add Product</Link>
+                    <Link className={active === 6 ? "active" : ""} onClick={() => handleClass(6)} to="/cart">Cart</Link>
                     <input placeholder="Search..." type="text" />
                 </div>
             </div>

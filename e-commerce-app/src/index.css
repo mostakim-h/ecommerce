@@ -656,7 +656,26 @@ body{
   margin-bottom: 20px;
 }
 
+.qtybtn{
+  display: flex;
+  align-items: center;
+}
+
 .product-details .main-details .qtybtn button:first-child{
+  color: #010027;
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  background: transparent;
+  transition: 0.2s;
+  width: 49px;
+}
+
+.qtybtn button:first-child{
   color: #010027;
   padding: 12px 20px;
   border: none;
@@ -683,6 +702,19 @@ body{
   width: 45px;
 }
 
+.qtybtn button:last-child{
+  color: #010027;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  background: transparent;
+  transition: 0.2s;
+  width: 45px;
+}
+
 .product-details .main-details .qtybtn input{
   width: 80px;
   padding: 15px;
@@ -694,7 +726,23 @@ body{
   outline: none;
 }
 
+.qtybtn input{
+  width: 80px;
+  padding: 15px;
+  font-weight: 300;
+  margin: 10px;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+}
+
 .product-details .main-details .qtybtn button:hover{
+  background: rgb(0, 119, 255);
+  color: #ffffff;
+}
+
+.qtybtn button:hover{
   background: rgb(0, 119, 255);
   color: #ffffff;
 }
@@ -811,4 +859,34 @@ body{
   padding: 5px 8px;
   border-radius: 30px;
   color: wheat;
+}
+
+.cart{
+  font-family: roboto;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cart .cart-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #efefef;
+  padding: 0px 10px;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+
+.cart .cart-section .cancelbtn{
+  border: 1px solid #e9e9e9;
+  background: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cart .cart-section .cancelbtn:hover{
+  background: red;
+  color: #ffffff;
 }

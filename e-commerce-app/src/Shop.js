@@ -42,7 +42,7 @@ const Shop = () => {
             <div className="products">
                 <div className="products-card">
                     {datas && datas.map((value) => (
-                        <ProductTamplete id={value.id} imageUrl={value.imageUrl} inStock={value.inStock} productName={value.productName} ratings={value.ratings} prize={value.prize} />
+                        <ProductTamplete key={value.id} id={value.id} imageUrl={value.imageUrl} inStock={value.inStock} productName={value.productName} ratings={value.ratings} prize={value.prize} />
                     ))}
                 </div>
             </div>

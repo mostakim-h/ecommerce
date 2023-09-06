@@ -1,0 +1,16 @@
+{
+  "cart": [
+    {
+      "id": 3,
+      "productName": "Tablet X5",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr2-1-600x600.jpg",
+      "prize": 699
+    },
+    {
+      "id": 10,
+      "productName": "Android Phone",
+      "imageUrl": "https://xtratheme.com/elementor/gadgets/wp-content/uploads/sites/108/2023/04/pr9-1-600x600.jpg",
+      "prize": 599
+    }
+  ]
+}
