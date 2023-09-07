@@ -2,11 +2,15 @@
 import useFetch from './useFetch';
 import ProductTamplete from './ProductTamplete';
 import { useState } from 'react';
+
 const ProductCategory = () => {
 
     const { data } = useFetch('http://localhost:9000/product')
     const [active, setActive] = useState(0)
     const [filterValue, setFilterValue] = useState('')
+
+    const arr = data && data.map(v => v.category)
+    .filter((v, i, ar)=> ar.indexOf(v)===i)
 
     const handleClass = (i, e) => {
         setActive(i)
@@ -15,9 +19,10 @@ const ProductCategory = () => {
 
     return (
         <div className="product-category">
+            
             <div className="buttons-of-category">
-                {data && data.map((v, i) => (
-                    <button key={i} value={v.category} className={active === i+1 ? "buttonActive" : ""} onClick={(e) => handleClass(i+1, e)}>{v.category}</button>
+                {arr && arr.map((v, i) => (
+                    <button key={i} value={v} className={active === i+1 ? "buttonActive" : ""} onClick={(e) => handleClass(i+1, e)}>{v}</button>
                 ))}
                 {filterValue && <p>Filtering <span value="" onClick={(e) => handleClass(0, e)}>reset</span></p>}
             </div>
